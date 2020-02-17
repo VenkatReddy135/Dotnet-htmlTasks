@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: purple;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #7CFC00;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+</style>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 11px 13px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.active {
+  background-color:#0099ff;
+  color: white;
+}
+.table{
+border-collapse: collapse;
+    border: 1px solid green;
+    position: relative;
+    top: -3px;
+    left: 833px;
+    width:28%}
+</style>
+</head>
+<body>
+
+    <p align="right" style="color:green">Employee support portal</p>
+
+    
+<span id="demo">
+        <div class="container-fluid">
+          <div class="navbar-header">
+         
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"style="color:blue;"><a href="#">sowndarya</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="btn btn-success" href="leave summary.html"></span> Home</a></li>
+            <li><a class="btn btn-success" href="Login.html"></span> Logout</a></li>
+            <li><a href="#">Change password</a></li>
+          </ul>
+        </div>
+      </nav>
+    </span>
+    <hr>
+      <!-- <div class="media">
+        <div class="media-left">
+          <img src="imgres.html" class="media-object" style="width:60px">
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Left-aligned</h4> -->
+
+    <nav class="navbar navbar navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+         
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">My Profile</a></li>
+      <li class="active"><a href="#">My Teams</a></li>
+          
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"> Enter Emp Name or code</a></li>
+            <li><a href="#"> Employee</a></li>
+           
+            <li><a href="#"><button class="btn btn-primary navbar-btn" style="border-radius: 12px">Search</button></a></li>
+          </ul>
+        </div>
+      </nav>
+
+<nav class="navbar navbar-inverse ">
+  <div class="container-fluid col-sm-6">
+    <div class="navbar-header">
+     </div>
+      <ul class="nav navbar-nav">    
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">People <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">My Profile</a></li>
+          <li><a href="#">My Team</a></li>
+          <li><a href="#">Alumni</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="#">Talent Folder</a></li>
+          <li><a href="#">Manage Folder</a></li>
+          <li><a href="#">HeadCount Dashboard</a></li>
+        </ul>
+      </li>
+	     <ul class="nav navbar-nav">
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Leave<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a class="btn btn-success" href="ApplyForLeave.html">Create a Leave Request</a></li>
+          <li><a class="btn btn-success" href="ler.html">Request Leave Encashment</a></li>         
+          <li><a class="btn btn-success" href="StatusOfRequest.html">My Leave Requests</a></li>
+           <li><a class="btn btn-success" href="LeaveBalance.html">Leave Balances</a></li>
+           <li><a class="btn btn-success" href="lems.html">Leave Details</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Attendance</a></li>
+      <li><a href="#">Travel</a></li>
+      <li><a href="#">Expenses</a></li>
+      <li><a href="#">Reimbursment</a></li>
+      <li><a href="#">Perfomance</a></li>
+      <li><a href="#"Reportd</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<div class="topnav" style="background-color:#0099ff">
+  <a class="active" href="#home">ApprovalLeave</a>
+ 
+</div>
+
+<div class="container-fluid" style="padding-left:16px">
+  <br>
+  Leave Type<span style="color:red">*</span>: <select type="text">
+        <option value="CasualLeave">Casual Leave</option>
+        <option value="SickLeave">Sick Leave</option>
+        <option value="Lop">LOSS OF PAY</option>
+        <option value="MaternityLeave ">Maternity Leave </option>
+        <option value="Compensatoryoff">Compensatory off</option>
+      </select>
+
+  <br>
+  <br>
+
+ Leave Type:  From :
+              <input type="date" name="From">
+ 		 <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <label>
+                <input type="radio" name="fullDay" id="fullDay">Full Day
+           	 </label>
+ 		<label>
+                <input type="radio" name="fullDay" id="firsthalf">First Half
+            	</label>
+ 		<label>
+                <input type="radio" name="fullDay" id="secondHalf">Second Half
+           	 </label>
+               <br>
+               <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To :
+              <input type="date" name="To">
+              <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <label>
+                <input type="radio" name="fullDay" id="fullDay">Full Day
+           	 </label>
+ 		<label>
+                <input type="radio" name="fullDay" id="firsthalf">First Half
+            	</label>
+ 		<label>
+                <input type="radio" name="fullDay" id="secondHalf">Second Half
+           	 </label>
+
+<div id="demo" style="margin-top:-150px;">
+<p style  ="margin-left: 1100px;"> MY LEAVE BALANCE<a href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwiGzd6fk87nAhWc8XMBHUs4BLgQPAgH">(details)</a></p>
+<div class="container">
+  <table class="table"> 
+    <thead>
+
+      <tr >
+        <th>Leave Type</th>
+        <th>Balance(in days)</th>
+      </tr>
+
+
+       <tr>
+          <td>Casual Leave</td>
+          <td>5</td>
+       </tr>
+	<tr>
+          <td>Sick Leave</td>
+          <td>3</td>
+        </tr>
+           <td>LOSS OF PAY</td>
+           <td>30</td>
+        <tr>
+           <td>Maternity Leave</td>
+ 	   <td>60</td>
+        </tr>
+	<tr>
+           <td>Compensatory off</td>
+           <td>10</td>
+	</tr>               	
+     </thead>
+   </tbody>
+  </table>
+
+
+<p style  ="margin-left: 835px;">Check Availability</p>
+
+     <select type="text" ; style ="margin-left:835px;">
+        <option value="My Availability">MyAvailability </option>
+        <option value="Notavailable">Not Available</option>
+        
+      </select>
+      <button type="button" class="btn btn-primary">Show</button> 
+<br>
+<br>
+
+<div class="container" style="margin-left:750px;">
+ 	<span> From : <input type="date" name="From">To : <input type="date" name="To">  </span> 
+       <br> 
+       <br>
+   <textarea rows="4" cols="50" name="comment" form="usrform">
+    Enter text here...</textarea>
+</div>
+
+</div>
+</div>
+
+<div style="margin-top:-269px;">
+<h4 align=left>Total Leave : 5.0</h4>
+<h4 align=left>Reason<span style="color:red">*</span>:</h4>
+  <textarea rows="4" cols="50" name="comment" form="usrform">
+    Enter text here...</textarea>
+<br>
+<b>Declaration:</b>
+<br>
+<b>I Confirm the same <input type="checkbox"></b>
+
+  <br>
+  <br>
+<p class="text-primary">In my Absence ,My Contact Details will be:</p>
+ <br>
+ 
+Name:  k vijender reddy
+ <br>
+  <br>
+Mobile: xxxxxxxxxx
+ <br>
+  <br>
+Email: vijenderreddy.k@ojas-it.com
+ <br>
+  <br>
+  <a class="btn btn-success" href="Additional.html">Approve <span class="glyphicon glyphicon-send"></span></a>
+ <a class="btn btn-danger" href="Additional.html">Reject <span class="glyphicon glyphicon-send"></span></a>
+ <a class="btn btn-info" href="Additional.html">Re-Consider <span class="glyphicon glyphicon-send"></span></a>
+ <a class="btn btn-primary" href="Additional.html">Cancel <span class="glyphicon glyphicon-send"></span></a>
+
+</div>
+</div>
+
+
+
+</body>
+</html>

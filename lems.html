@@ -1,0 +1,275 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: purple;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #7CFC00;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+</style>
+</head>
+<body>
+ 
+  
+    <p align="right" style="color:green">Employee support portal</p>
+
+    
+<span id="demo">
+        <div class="container-fluid">
+          <div class="navbar-header">
+         
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active" style="color:green;"><a href="#">sowndarya</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="btn btn-success" href="leave summary.html"></span> Home</a></li>
+            <li><a class="btn btn-success" href="Login.html"></span> Logout</a></li>
+            <li><a href="#">Change password</a></li>
+          </ul>
+        </div>
+      </nav>
+    </span>
+    <hr>
+      <!-- <div class="media">
+        <div class="media-left">
+          <img src="imgres.html" class="media-object" style="width:60px">
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Left-aligned</h4> -->
+
+    <nav class="navbar navbar navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+         
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">My Profile</a></li>
+      <li class="active"><a href="#">My Teams</a></li>
+          
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"> Enter Emp Name or code</a></li>
+            <li><a href="#"> Employee</a></li>
+           
+            <li><a href="#"><button class="btn btn-primary navbar-btn" style="border-radius: 12px">Search</button></a></li>
+          </ul>
+        </div>
+      </nav>
+
+<nav class="navbar navbar-inverse ">
+  <div class="container-fluid col-sm-6">
+    <div class="navbar-header">
+     </div>
+      <ul class="nav navbar-nav">    
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">People <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">My Profile</a></li>
+          <li><a href="#">My Team</a></li>
+          <li><a href="#">Alumni</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="#">Talent Folder</a></li>
+          <li><a href="#">Manage Folder</a></li>
+          <li><a href="#">HeadCount Dashboard</a></li>
+        </ul>
+      </li>
+	     <ul class="nav navbar-nav">
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Leave<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a class="btn btn-success" href="ApplyForLeave.html">Create a Leave Request</a></li>
+          <li><a class="btn btn-success" href="#">Request Leave Encashment</a></li>         
+          <li><a class="btn btn-success" href="StatusOfRequest.html">My Leave Requests</a></li>
+           <li><a class="btn btn-success" href="LeaveBalance.html">Leave Balances</a></li>
+           <li><a class="btn btn-success" href="lems.html">Leave Details</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Attendance</a></li>
+      <li><a href="#">Travel</a></li>
+      <li><a href="#">Expenses</a></li>
+      <li><a href="#">Reimbursment</a></li>
+      <li><a href="#">Perfomance</a></li>
+      <li><a href="#"Reportd</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+    <div class="page-header" style="background-color:lightblue;height:50px">
+        <h1>Leave Transaction Statement</h1>
+         </div>
+    <h2 style="color:red">Select the leave type and Statement period</h2>
+    <br />
+
+    <div class="table-responsive">
+        <table class="table" border="1" style="height:100px">
+
+            <tr>
+                <td>
+                    <form action="/action_page.php">
+                        <a href="#">This Month</a>|
+                        <a href="#">Last Three Months</a>|
+                        <a href="#">Last Six Months</a>|
+                        <a href="#">This Year</a>|
+                        <a href="#">Last Year</a>
+
+                        <h style="margin-left:50px">Leave Year:</h>
+
+                        <select name="cars">
+                            <option value="#">2011</option>
+                            <option value="#">2012</option>
+                            <option value="#">2013</option>
+                            <option value="#">2015</option>
+                            <option value="#">2016</option>
+                            <option value="#">2017</option>
+                            <option value="#">2018</option>
+                            <option value="#">2019</option>
+                            <option value="#">2020</option>
+                        </select>
+
+                    </form>
+
+           
+                </td>
+            </tr>
+            <tr>
+                <td>
+				<div>
+				 <form action="/action_page.php">
+                  
+                         <b> Leave Type:</b>
+                      
+                       <select>
+						<option value="#">Casual Leave</option>
+						<option value="#">Sick Leave</option>
+						<option value="#">Loss Of Pay</option>
+						</select>
+                         </form>
+
+                        <b>
+                            Statement
+                        </b>
+                        
+                        
+                        <b>period:</b>
+              &nbsp;&nbsp;&nbsp;&nbsp
+                        StartDate:
+                        <input type="date" name="From" style="margin-left:5px">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                        EndDate:
+                        <input type="date" name="To" style="margin-left:5px">
+                        <button type="button" class="btn btn-primary" style="margin-left:10px">Go</button>
+                    </div>
+                </td>
+
+            </tr>
+        </table>
+        <br />
+        <br />
+
+    </div>
+    <div class="table-responsive" >
+        <table class="table" border="1" style="">
+            <tr>
+                <td>
+                    <b style="color:blue">Leave Transaction Statement For the period "#####" To "#####"</b>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="table-responsive">
+        <table class="table" border="1">
+         
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Transaction Detailes</th>
+                    <th>Action by</th>
+                    <th>Increase</th>
+                    <th>Decrase</th>
+                    <th>Balence</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>20-02-2020</td>
+                    <td>Accured</td>
+                    <td></td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>10.0</td>
+                </tr>
+                <tr>
+                    <td>25-01-2020</td>
+                    <td>Accured</td>
+                    <td></td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>10.0</td>
+                </tr>
+                <tr>
+                    <td>03-06-2020</td>
+                    <td>Accured</td>
+                    <td></td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>10.0</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        </div>
+</body>
+</html>

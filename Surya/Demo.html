@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+ 
+ 
+  width: 100%;
+}
+
+table,td, th {
+  border: 1px solid Red;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: pink;
+}
+
+tr:nth-child(odd) {
+  background-color: Aqua;
+}
+
+</style>
+</head>
+
+<body>
+
+
+
+ <div class="container">
+   <h2>Balance Summary</h2>
+      <input type="text" placeholder="Search.." name="search">
+      <button type="button" class="btn btn-primary">Go</button>
+    <br/>
+    <br/>
+
+  
+
+<table>
+  <tr>
+    <th>Leave Type</th>
+    <th>Year Start Balance</th>
+    <th>Added so far</th>
+    <th>Valied so far</th>
+    <th>Balance today</th>
+    <th>Yet to Accrue</th>
+    <th>Year End Balance</th>
+  </tr>
+  <tr>
+    <td>Authorized Absence with no Accrual</td>
+    <td>0.0</td>
+    <td>0.0</td>
+    <td>0.0</td>
+    <td> - </td>
+    <td> - </td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td>Authorized long Absence Accrual Deduction </td>
+    <td>0.0</td>
+    <td>0.0</td>
+    <td>0.0</td>
+    <td> - </td>
+    <td> - </td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td>Casual Leave</td>
+    <td>0.0</td>
+    <td>18.0</td>
+    <td>0.0</td>
+    <td>18.0</td>
+    <td>0.00</td>
+    <td>18.00</td>
+  </tr>
+  <tr>
+    <td>Compensatory Leave</td>
+    <td> - </td>
+    <td> - </td>
+<td>0.0</td>
+<td> - </td>
+<td> - </td>
+<td> - </td>
+  </tr>
+  <tr>
+    <td>Diversity Leave</td>
+    <td>0.0</td>
+    <td>2.0</td>
+<td>0.0</td>
+<td>2.0</td>
+<td>0.0</td>
+<td>2.0</td>
+  </tr>
+  <tr>
+    <td>Earned Leave</td>
+    <td>0.0</td>
+    <td>9.0</td>
+<td>0.0</td>
+<td>9.0</td>
+<td>1.00</td>
+<td>10.00</td>
+  </tr>
+<tr>
+    <td>Sick</td>
+    <td>0.0</td>
+    <td>15.0</td>
+<td>0.0</td>
+<td>15.0</td>
+<td>0.00</td>
+<td>15.00</td>
+  </tr>
+</table>
+<br/>
+
+  <button type="button" class="btn btn-primary">Exit</button>
+
+
+</div>
+</body>
+
+</html>

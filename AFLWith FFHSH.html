@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 11px 13px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.active {
+  background-color:#0099ff;
+  color: white;
+}
+.table{
+border-collapse: collapse;
+    border: 1px solid green;
+    position: relative;
+    top: -3px;
+    left: 833px;
+    width:28%}
+</style>
+</head>
+<body>
+
+<div class="topnav" style="background-color:#0099ff">
+  <a class="active" href="#home">Apply For Leave</a>
+ 
+</div>
+
+<div class="container-fluid" style="padding-left:16px">
+  <br>
+  Leave Type<span style="color:red">*</span>: <select type="text">
+        <option value="CasualLeave">Casual Leave</option>
+        <option value="SickLeave">Sick Leave</option>
+        <option value="Lop">LOSS OF PAY</option>
+        <option value="MaternityLeave ">Maternity Leave </option>
+        <option value="Compensatoryoff">Compensatory off</option>
+      </select>
+
+  <br>
+  <br>
+
+ Leave Type:  From :
+              <input type="date" name="From">
+ 		 <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <label>
+                <input type="radio" name="fullDay" id="fullDay">Full Day
+           	 </label>
+ 		<label>
+                <input type="radio" name="fullDay" id="firsthalf">First Half
+            	</label>
+ 		<label>
+                <input type="radio" name="fullDay" id="secondHalf">Second Half
+           	 </label>
+               <br>
+               <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To :
+              <input type="date" name="To">
+              <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <label>
+                <input type="radio" name="fullDay" id="fullDay">Full Day
+           	 </label>
+ 		<label>
+                <input type="radio" name="fullDay" id="firsthalf">First Half
+            	</label>
+ 		<label>
+                <input type="radio" name="fullDay" id="secondHalf">Second Half
+           	 </label>
+
+<div id="demo" style="margin-top:-150px;">
+<p style  ="margin-left: 1100px;"> MY LEAVE BALANCE<a href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwiGzd6fk87nAhWc8XMBHUs4BLgQPAgH">(details)</a></p>
+<div class="container">
+  <table class="table"> 
+    <thead>
+
+      <tr >
+        <th>Leave Type</th>
+        <th>Balance(in days)</th>
+      </tr>
+
+
+       <tr>
+          <td>Casual Leave</td>
+          <td>5</td>
+       </tr>
+	<tr>
+          <td>Sick Leave</td>
+          <td>3</td>
+        </tr>
+           <td>LOSS OF PAY</td>
+           <td>30</td>
+        <tr>
+           <td>Maternity Leave</td>
+ 	   <td>60</td>
+        </tr>
+	<tr>
+           <td>Compensatory off</td>
+           <td>10</td>
+	</tr>               	
+     </thead>
+   </tbody>
+  </table>
+
+
+<p style  ="margin-left: 835px;">Check Availability</p>
+
+     <select type="text" ; style ="margin-left:835px;">
+        <option value="My Availability">MyAvailability </option>
+        <option value="Notavailable">Not Available</option>
+        
+      </select>
+      <button type="button" class="btn btn-primary">Show</button> 
+<br>
+<br>
+
+<div class="container" style="margin-left:750px;">
+ 	<span> From : <input type="date" name="From">To : <input type="date" name="To">  </span> 
+       <br> 
+       <br>
+   <textarea rows="4" cols="50" name="comment" form="usrform">
+    Enter text here...</textarea>
+</div>
+
+</div>
+</div>
+
+<div style="margin-top:-269px;">
+<h4 align=left>Total Leave : 5.0</h4>
+<h4 align=left>Reason<span style="color:red">*</span>:</h4>
+  <textarea rows="4" cols="50" name="comment" form="usrform">
+    Enter text here...</textarea>
+<br>
+<b>Declaration:</b>
+<br>
+<b>I Confirm the same <input type="checkbox"></b>
+
+  <br>
+  <br>
+<p class="text-primary">In my Absence ,My Contact Details will be:</p>
+ <br>
+ 
+Name:  k vijender reddy
+ <br>
+  <br>
+Mobile: xxxxxxxxxx
+ <br>
+  <br>
+Email: vijenderreddy.k@ojas-it.com
+ <br>
+  <br>
+  <a class="btn btn-success" href="Additional.html">Approve <span class="glyphicon glyphicon-send"></span></a>
+ <a class="btn btn-danger" href="Additional.html">Reject <span class="glyphicon glyphicon-send"></span></a>
+ <a class="btn btn-info" href="Additional.html">Re-Consider <span class="glyphicon glyphicon-send"></span></a>
+ <a class="btn btn-primary" href="Additional.html">Cancel <span class="glyphicon glyphicon-send"></span></a>
+
+</div>
+</div>
+
+
+
+</body>
+</html>

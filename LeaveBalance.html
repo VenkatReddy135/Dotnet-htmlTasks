@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: purple;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #7CFC00;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+</style>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+ 
+ 
+  width: 100%;
+}
+
+table,td, th {
+  border: 1px solid Red;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: pink;
+}
+
+tr:nth-child(odd) {
+  background-color: Aqua;
+}
+
+</style>
+</head>
+
+<body>
+  <p align="right" style="color:green">Employee support portal</p>
+
+    
+<span id="demo">
+        <div class="container-fluid">
+          <div class="navbar-header">
+         
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active" style="color:green;"><a href="#">sowndarya</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="btn btn-success" href="leave summary.html"></span> Home</a></li>
+            <li><a class="btn btn-success" href="Login.html"></span> Logout</a></li>
+            <li><a href="#">Change password</a></li>
+          </ul>
+        </div>
+      </nav>
+    </span>
+    <hr>
+      <!-- <div class="media">
+        <div class="media-left">
+          <img src="imgres.html" class="media-object" style="width:60px">
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Left-aligned</h4> -->
+
+    <nav class="navbar navbar navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+         
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">My Profile</a></li>
+      <li class="active"><a href="#">My Teams</a></li>
+          
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"> Enter Emp Name or code</a></li>
+            <li><a href="#"> Employee</a></li>
+           
+            <li><a href="#"><button class="btn btn-primary navbar-btn" style="border-radius: 12px">Search</button></a></li>
+          </ul>
+        </div>
+      </nav>
+
+<nav class="navbar navbar-inverse ">
+  <div class="container-fluid col-sm-6">
+    <div class="navbar-header">
+     </div>
+      <ul class="nav navbar-nav">    
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">People <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">My Profile</a></li>
+          <li><a href="#">My Team</a></li>
+          <li><a href="#">Alumni</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="#">Talent Folder</a></li>
+          <li><a href="#">Manage Folder</a></li>
+          <li><a href="#">HeadCount Dashboard</a></li>
+        </ul>
+      </li>
+	     <ul class="nav navbar-nav">
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Leave<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a class="btn btn-success" href="ApplyForLeave.html">Create a Leave Request</a></li>
+          <li><a class="btn btn-success" href="#">Request Leave Encashment</a></li>         
+          <li><a class="btn btn-success" href="StatusOfRequest.html">My Leave Requests</a></li>
+           <li><a class="btn btn-success" href="LeaveBalance.html">Leave Balances</a></li>
+           <li><a class="btn btn-success" href="lems.html">Leave Details</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Attendance</a></li>
+      <li><a href="#">Travel</a></li>
+      <li><a href="#">Expenses</a></li>
+      <li><a href="#">Reimbursment</a></li>
+      <li><a href="#">Perfomance</a></li>
+      <li><a href="#"Reportd</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+ <div class="container">
+   <h2>Balance Summary</h2>
+      <input type="text" placeholder="Search.." name="search">
+      <button type="button" class="btn btn-primary">Go</button>
+    <br/>
+    <br/>
+
+  
+
+<table>
+  <tr>
+    <th>Leave Type</th>
+    <th>Year Start Balance</th>
+    <th>Added so far</th>
+    <th>Valied so far</th>
+    <th>Balance today</th>
+    <th>Yet to Accrue</th>
+    <th>Year End Balance</th>
+  </tr>
+  <tr>
+    <td>Authorized Absence with no Accrual</td>
+    <td>0.0</td>
+    <td>0.0</td>
+    <td>0.0</td>
+    <td> - </td>
+    <td> - </td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td>Authorized long Absence Accrual Deduction </td>
+    <td>0.0</td>
+    <td>0.0</td>
+    <td>0.0</td>
+    <td> - </td>
+    <td> - </td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td>Casual Leave</td>
+    <td>0.0</td>
+    <td>18.0</td>
+    <td>0.0</td>
+    <td>18.0</td>
+    <td>0.00</td>
+    <td>18.00</td>
+  </tr>
+  <tr>
+    <td>Compensatory Leave</td>
+    <td> - </td>
+    <td> - </td>
+<td>0.0</td>
+<td> - </td>
+<td> - </td>
+<td> - </td>
+  </tr>
+  <tr>
+    <td>Diversity Leave</td>
+    <td>0.0</td>
+    <td>2.0</td>
+<td>0.0</td>
+<td>2.0</td>
+<td>0.0</td>
+<td>2.0</td>
+  </tr>
+  <tr>
+    <td>Earned Leave</td>
+    <td>0.0</td>
+    <td>9.0</td>
+<td>0.0</td>
+<td>9.0</td>
+<td>1.00</td>
+<td>10.00</td>
+  </tr>
+<tr>
+    <td>Sick</td>
+    <td>0.0</td>
+    <td>15.0</td>
+<td>0.0</td>
+<td>15.0</td>
+<td>0.00</td>
+<td>15.00</td>
+  </tr>
+</table>
+<br/>
+
+<a class="btn btn-success" href="leave summary.html">Exit <span class="glyphicon glyphicon-send"></span></a>
+
+
+</div>
+</body>
+
+</html>

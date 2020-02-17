@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: purple;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #7CFC00;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+</style>
+</head>
+<body>
+ 
+  
+    <p align="right" style="color:green">Employee support portal</p>
+
+    
+<span id="demo">
+        <div class="container-fluid">
+          <div class="navbar-header">
+         
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"style="color:blue;"><a href="#">sowndarya</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="btn btn-success" href="leave summary.html"></span> Home</a></li>
+            <li><a class="btn btn-success" href="Login.html"></span> Logout</a></li>
+            <li><a href="#">Change password</a></li>
+          </ul>
+        </div>
+      </nav>
+    </span>
+    <hr>
+      <!-- <div class="media">
+        <div class="media-left">
+          <img src="imgres.html" class="media-object" style="width:60px">
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Left-aligned</h4> -->
+
+    <nav class="navbar navbar navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+         
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">My Profile</a></li>
+      <li class="active"><a href="#">My Teams</a></li>
+          
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"> Enter Emp Name or code</a></li>
+            <li><a href="#"> Employee</a></li>
+           
+            <li><a href="#"><button class="btn btn-primary navbar-btn" style="border-radius: 12px">Search</button></a></li>
+          </ul>
+        </div>
+      </nav>
+
+<nav class="navbar navbar-inverse ">
+  <div class="container-fluid col-sm-6">
+    <div class="navbar-header">
+     </div>
+      <ul class="nav navbar-nav">    
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">People <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">My Profile</a></li>
+          <li><a href="#">My Team</a></li>
+          <li><a href="#">Alumni</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="#">Talent Folder</a></li>
+          <li><a href="#">Manage Folder</a></li>
+          <li><a href="#">HeadCount Dashboard</a></li>
+        </ul>
+      </li>
+	     <ul class="nav navbar-nav">
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Leave<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a class="btn btn-success" href="ApplyForLeave.html">Create a Leave Request</a></li>
+          <li><a class="btn btn-success" href="ler.html">Request Leave Encashment</a></li>         
+          <li><a class="btn btn-success" href="StatusOfRequest.html">My Leave Requests</a></li>
+           <li><a class="btn btn-success" href="LeaveBalance.html">Leave Balances</a></li>
+           <li><a class="btn btn-success" href="lems.html">Leave Details</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Attendance</a></li>
+      <li><a href="#">Travel</a></li>
+      <li><a href="#">Expenses</a></li>
+      <li><a href="#">Reimbursment</a></li>
+      <li><a href="#">Perfomance</a></li>
+      <li><a href="#"Reportd</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Need TO Act')">Need TO Act</button>
+  <button class="tablinks" onclick="openCity(event, 'MyRequest')">MyRequest</button>
+  <button class="tablinks" onclick="openCity(event, 'All')">All</button>
+</div>
+
+<div id="Need TO Act" class="tabcontent">
+  <h3>Need TO Act</h3>
+   <div class="container">
+ <script>
+function myFunction() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+<button type="Approve Selected" class="btn btn-info" align="left"><a class="btn btn-success" href="ApproveLeave.html">Approve Selected<span class="glyphicon glyphicon-send"></span></a></button><span style="display:inline-block;margin-right:700px"></span>
+<a class="btn btn-danger" href="leave summary.html">Reject <span class="glyphicon glyphicon-send"></span></a>        
+<input type="text"  width="10" placeholder="Search" align="right">
+   
+      <button type="submit" class="btn btn-default">Submit</button>
+
+  
+  <table class="table">
+    <thead>
+      <tr>
+<th> <input type="checkbox" id="myCheck"  onclick="myFunction()">Sellect All</th>
+        <th>Applied On</th>
+        <th>Leave Type</th>
+        <th>From</th>
+        <th>No Of Days</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+<th> <input type="checkbox" id="myCheck"  onclick="myFunction()"></th>
+        <td>10-Feb-2020</td>
+        <td>CasualLeave</td>
+        <td>Surya</td>
+        <td>1</td>
+<td>21-Feb-2020</td>
+<td>21-Feb-2020</td>
+<td>Approved</td>
+      </tr>      
+      <tr class="success">
+<th> <input type="checkbox" id="myCheck"  onclick="myFunction()"></th>
+        <td>10-Feb-2020</td>
+        <td>CasualLeave</td>
+        <td>Vijendhar</td>
+        <td>1</td>
+<td>20-Feb-2020</td>
+<td>20-Feb-2020</td>
+<td>Approved</td>
+      </tr>
+      <tr class="danger">
+<th> <input type="checkbox" id="myCheck"  onclick="myFunction()"></th>
+        <td>10-Feb-2020</td>
+        <td>CompOfLeave</td>
+        <td>Kiran</td>
+        <td>1</td>
+<td>21-Feb-2020</td>
+<td>21-Feb-2020</td>
+<td>Approved</td>
+      </tr>
+      <tr class="info">
+<th> <input type="checkbox" id="myCheck"  onclick="myFunction()"></th>
+       <td>10-Feb-2020</td>
+        <td>Sick</td>
+        <td>Sowndharya</td>
+        <td>1</td>
+<td>21-Feb-2020</td>
+<td>21-Feb-2020</td>
+<td>Approved</td>
+      </tr>
+      <tr class="warning">
+<th> <input type="checkbox" id="myCheck"  onclick="myFunction()"></th>
+        <td>10-Feb-2020</td>
+        <td>LossOfPay</td>
+        <td>Swapna</td>
+        <td>1</td>
+<td>21-Feb-2020</td>
+<td>21-Feb-2020</td>
+<td>Approved</td>
+      </tr>
+      <tr class="active">
+<th> <input type="checkbox" id="myCheck"  onclick="myFunction()"></th>
+        <td>10-Feb-2020</td>
+        <td>CasualLeave</td>
+        <td>PraveenYadav</td>
+        <td>1</td>
+<td>21-Feb-2020</td>
+<td>21-Feb-2020</td>
+<td>Approved</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+<div id="MyRequest" class="tabcontent">
+  <h3>MyRequest</h3>
+  <div class="container">
+<span style="display:inline-block;margin-right:850px"></span>
+        <input type="text"  width="10" placeholder="Search" align="right">
+   
+      <button type="submit" class="btn btn-default">Submit</button>
+
+  
+  <table class="table">
+    <thead>
+      <tr>
+
+        <th>Applied On</th>
+        <th>Leave Type</th>
+        <th>To</th>
+        <th>No Of Days</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+
+        <td>10-Jan-2020</td>
+        <td>CasualLeave</td>
+        <td>Srinivas BollaPragada</td>
+        <td>1</td>
+<td>21-Feb-2020</td>
+<td>21-Feb-2020</td>
+<td>Cancel</td>
+      </tr>      
+      <tr class="success">
+
+        <td>20-Feb-2020</td>
+        <td>CasualLeave</td>
+        <td>Parvathi T</td>
+        <td>1</td>
+<td>20-Feb-2020</td>
+<td>20-Feb-2020</td>
+<td>Cancel</td>
+      </tr>
+      <tr class="danger">
+
+        <td>21-Feb-2020</td>
+        <td>CompOfLeave</td>
+        <td>Parvathi T</td>
+        <td>1</td>
+<td>21-Feb-2020</td>
+<td>21-Feb-2020</td>
+<td>Approved</td>
+      </tr>
+      <tr class="info">
+
+       <td>20-Feb-2020</td>
+        <td>Sick</td>
+        <td>Parvathi T</td>
+        <td>1</td>
+<td>21-Feb-2020</td>
+<td>21-Feb-2020</td>
+<td>Approved</td>
+      </tr>
+      <tr class="warning">
+
+        <td>22-Feb-2019</td>
+        <td>LossOfPay</td>
+        <td>Parvathi T</td>
+        <td>1</td>
+<td>21-Feb-2020</td>
+<td>21-Feb-2020</td>
+<td>Approved</td>
+      </tr>
+      <tr class="active">
+
+        <td>10-March-2019</td>
+        <td>CasualLeave</td>
+        <td>Parvathi T</td>
+        <td>1</td>
+<td>21-Feb-2020</td>
+<td>21-Feb-2020</td>
+<td>Approved</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+
+<div id="All" class="tabcontent">
+   <h2>All</h2>
+  <div class="container">
+ <span style="display:inline-block;margin-right:850px"></span>
+        <input type="text"  width="10" placeholder="Search" align="right">
+   
+      <button type="submit" class="btn btn-default">Submit</button>
+
+  
+  <table class="table">
+    <thead>
+      <tr>
+
+        <th>Applied On</th>
+        <th>Leave Type</th>
+        <th>From</th>
+        <th>No Of Days</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+
+        <td>10-Feb-2020</td>
+        <td>CasualLeave</td>
+        <td>Surya</td>
+        <td>1</td>
+<td>21-Feb-2020</td>
+<td>21-Feb-2020</td>
+<td>Approved</td>
+      </tr>      
+      <tr class="success">
+
+        <td>10-Feb-2020</td>
+        <td>CasualLeave</td>
+        <td>Vijendhar</td>
+        <td>1</td>
+<td>20-Feb-2020</td>
+<td>20-Feb-2020</td>
+<td>Approved</td>
+      </tr>
+      <tr class="danger">
+
+        <td>10-Feb-2020</td>
+        <td>CompOfLeave</td>
+        <td>Kiran</td>
+        <td>1</td>
+<td>21-Feb-2020</td>
+<td>21-Feb-2020</td>
+<td>Approved</td>
+      </tr>
+      <tr class="info">
+
+       <td>10-Feb-2020</td>
+        <td>Sick</td>
+        <td>Sowndharya</td>
+        <td>1</td>
+<td>21-Feb-2020</td>
+<td>21-Feb-2020</td>
+<td>Approved</td>
+      </tr>
+      <tr class="warning">
+
+        <td>10-Feb-2020</td>
+        <td>LossOfPay</td>
+        <td>Swapna</td>
+        <td>1</td>
+<td>21-Feb-2020</td>
+<td>21-Feb-2020</td>
+<td>Approved</td>
+      </tr>
+      <tr class="active">
+
+        <td>10-Feb-2020</td>
+        <td>CasualLeave</td>
+        <td>PraveenYadav</td>
+        <td>1</td>
+<td>21-Feb-2020</td>
+<td>21-Feb-2020</td>
+<td>Approved</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+  </div> 
+</body>
+</html> 
